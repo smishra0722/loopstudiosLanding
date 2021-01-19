@@ -1,0 +1,42 @@
+@import '../../base-styles/variables.scss';
+.item {
+    position: relative;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        z-index: 0;
+    }
+
+    .title{
+        z-index: 999;
+        width: 40%;
+        font-size: 2rem;
+        position: absolute;
+        bottom: 0;
+        left: 2rem;
+        color: $clr-white;
+    }
+
+    &:hover{
+        
+        &::after {
+            height: 100%;
+        }
+
+        .title{
+            color: $clr-black;
+        }
+
+        
+    }
+}

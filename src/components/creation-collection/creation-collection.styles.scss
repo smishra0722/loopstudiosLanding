@@ -1,0 +1,41 @@
+@import '../../base-styles/variables.scss';
+
+.collection{
+    margin: 0 14.4rem;
+    height: auto;
+    margin-bottom: 10rem;
+
+
+
+    &-header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        .collection-title {
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+
+        .btn {
+            all: unset;
+            border: 1px solid $clr-black;
+            padding: .5rem 1rem;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $clr-black;
+                color: $clr-white;
+            }
+        }
+    }
+}
+.collection-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    
+}

@@ -1,13 +1,23 @@
 import React from 'react';
-import Header from './components/header/header.component.jsx';
+import Homepage from './pages/homepage/homepage.component.jsx'
+import {Route, Switch} from 'react-router-dom';
 import './App.css';
 
+const testPage = () => {
+  return (
+    <div>Test Success</div>
+  );
+}
 
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <Header />
+      <div>
+        <Switch>
+          <Route exact path='/' component={Homepage} />
+          <Route exact path='/deep-earth' component={testPage} />
+        </Switch>
+        
       </div>
     );
   }

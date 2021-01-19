@@ -1,0 +1,30 @@
+@import '../../base-styles/variables.scss';
+.section-1 {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding: 3rem 0;
+
+    .section-image {
+        width: 60%;
+        height: 30rem;
+        background-image: url(../../images/image-interactive.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .section-typo{
+        background-color: $clr-white;
+        width: 50%;
+        padding: 2rem 3rem;
+        position: absolute;
+        left: 90%;
+        bottom: 0rem;
+
+        .title{
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+    }
+}

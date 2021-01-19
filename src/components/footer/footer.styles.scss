@@ -1,0 +1,47 @@
+@import '../../base-styles/variables.scss';
+.footer {
+    margin: 0 auto;
+    margin-top: 3rem;
+    background-color: $clr-black;
+    color: $clr-white;
+    height: auto;
+    padding: 2rem 0;
+
+    .footer-wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .footer-navigation {
+            list-style: none;
+            margin-left: -2.6rem;
+
+            .links{
+                cursor: pointer;
+                display: inline-block;
+                margin-right: 1rem;
+            }
+        }
+
+        .footer-right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+
+
+            .footer-navigation-social {
+                list-style: none;
+                margin-left: -2.6rem;
+    
+                .link{
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                    display: inline-block;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
