@@ -1,0 +1,29 @@
+@import '../../base-styles/variables.scss';
+.header{
+    height: 60vh;
+    background-color: red;
+    background-image: url('../../images/image-hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $clr-white;
+
+    &-text{
+        max-width: 1440px;
+        height: 85%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+
+        .text-box{
+            font-weight: 300;
+            text-transform: uppercase;
+            width: 35%;
+            font-size: 4rem;
+            border: 1px solid $clr-white;
+            padding: 2rem;
+            padding-bottom: 1.5rem;
+            padding-right: 4rem;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import '../../base-styles/variables.scss';
+
+
+.navbar{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    &-logo {
+        font-weight: 400;
+        font-family: 'Alata', sans-serif;
+        font-size: 2rem;
+    }
+
+    .links {
+        list-style: none;
+        
+        .link{
+            position: relative;
+            display: inline-block;
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                height: 2px;
+                width: 50%;
+                background-color: $clr-white;
+                bottom: -7px;
+                transform: translateX(50%);
+                left: 0;
+                display: none;
+            }
+
+            &:hover {
+                cursor: pointer;
+                &::after {
+                    display: block;
+                }
+            }
+        }
+    }
+}
