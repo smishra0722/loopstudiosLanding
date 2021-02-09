@@ -17,7 +17,7 @@ class CreationCollection extends React.Component {
         return (
             <div className='collection'>
                 <div className='collection-header'>
-                    <h2 className='collection-title'>our creations</h2>
+                    <h2 className='collection-title'>my projects</h2>
                     <button className='btn'>See all</button>
                 </div>
                 <div className='collection-gallery'>

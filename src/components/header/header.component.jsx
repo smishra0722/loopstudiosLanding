@@ -7,7 +7,7 @@ const Header = () => {
         <div className='header'>
             <Navbar />
             <div className='header-text'>
-                <div className='text-box'>Immersive Experiences that deliver</div>
+                <div className='text-box'>IMMERSIVE<br /> EXPERIENCES<br /> THAT DELIVER</div>
             </div>
         </div>
     );

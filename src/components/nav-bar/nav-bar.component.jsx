@@ -4,7 +4,7 @@ import './nav-bar.styles.scss';
 const Navbar = () => {
     return (
         <div className='navbar'>
-            <div className='navbar-logo'>loopstudios</div>
+            <div className='navbar-logo'>Loopstudios</div>
             <div className='navbar-links'>
                 <ul className='links'>
                     <li className='link'>About</li>

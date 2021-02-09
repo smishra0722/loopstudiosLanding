@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='footer'>
             <div className='footer-wrapper'>
                 <div className='footer-left'>
-                    <h1 className='footer-logo'>loopstudios</h1>
+                    <h1 className='footer-logo'>Loopstudios</h1>
                     <ul className='footer-navigation'>
                         <li className='links'>About</li>
                         <li className='links'>Services</li>
